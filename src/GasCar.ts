@@ -1,4 +1,4 @@
-import { Racer } from "./racer-functions";
+import { Racer } from "../src/racer-functions";
 
 class GasCar implements Racer {
   team: string;
