@@ -1,4 +1,4 @@
-import { Racer } from "./racer-functions";
+import { Racer } from "../src/racer-functions";
 class SolarCar implements Racer {
   team: string;
   speed: number = 0;
