@@ -2,7 +2,7 @@ import { Racer } from "../src/racer-functions";
 
 class GasCar implements Racer {
   team: string;
-  speed: number = 0;
+  speed: number = 0; //might be why speed is always equal to 0!!
   fuel: number;
 
   constructor(team: string, fuel: number = 10) {

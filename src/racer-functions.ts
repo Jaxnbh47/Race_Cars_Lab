@@ -4,6 +4,21 @@ interface Racer {
   accelerate(): void;
   isFuelEmpty(): boolean;
 }
+  function findAverageSpeed(racers: Racer[]){
+    let totalSpeed = 0;
+    for (const racer of racers) {
+      totalSpeed += racer.speed;
+          const averageSpeed = totalSpeed / racers.length;
+    return averageSpeed;
+    }
+    const averageSpeed = totalSpeed / racers.length;
+    return averageSpeed;
+  }
+
+
+function findRacersWithEmptyFuel(racers: Racer[]){
+  return racers.filter((racer) => racer.isFuelEmpty());
+}
 
 function getFasterRacer(racerA: Racer, racerB: Racer): Racer | null {
   if (racerA.speed > racerB.speed) {
@@ -14,16 +29,4 @@ function getFasterRacer(racerA: Racer, racerB: Racer): Racer | null {
     return null;
   }
 }
-
-function findAverageSpeed(racers: Racer[]): number {
-  if (racers.length === 0) {
-    return 0;
-  }
-  return racers.reduce((total, racer) => total + racer.speed, 0) / racers.length;
-}
-
-function findRacersWithEmptyFuel(racers: Racer[]): Racer[] {
-  return racers.filter(racer => racer.isFuelEmpty());
-}
-
 export { Racer, getFasterRacer, findAverageSpeed, findRacersWithEmptyFuel };
