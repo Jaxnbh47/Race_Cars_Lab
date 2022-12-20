@@ -1,4 +1,4 @@
-import { SolarCar } from "../Racerfunctions/Solarcars";
+import { SolarCar } from "../interfaces/Solarcars";
 
 describe('SolarCar', () => {
     test('Team name test', () => {

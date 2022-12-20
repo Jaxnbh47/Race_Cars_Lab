@@ -1,6 +1,6 @@
-import { Racer } from "../interfaces/IRacer";
+import { Racer } from "./IRacer";
 
- export class GasCar implements Racer {
+class GasCar implements Racer {
   team: string;
   speed: number;
   fuel: number = 10;
@@ -13,7 +13,6 @@ import { Racer } from "../interfaces/IRacer";
       this.fuel;
     }
   }
-
   accelerate(): void {
     this.speed += 2;
     this.fuel -= 1;
@@ -23,3 +22,4 @@ import { Racer } from "../interfaces/IRacer";
     return this.fuel <= 0;
   }
 }
+export { GasCar };

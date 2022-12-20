@@ -1,6 +1,6 @@
 import {Racer, getFasterRacer, findAverageSpeed, findRacersWithEmptyFuel,} from "../interfaces/IRacer";
 import { GasCar } from "../interfaces/GasCar";
-import { SolarCar } from "../Racerfunctions/Solarcars";
+import { SolarCar } from "../interfaces/Solarcars";
 
 describe("find average speed", () => {
   test('returns 0 when all cars have 0 speed', () => {

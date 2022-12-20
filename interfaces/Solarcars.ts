@@ -1,4 +1,4 @@
-import { Racer } from "../interfaces/IRacer";
+import { Racer } from "./IRacer";
 
 class SolarCar implements Racer {
   team: string;

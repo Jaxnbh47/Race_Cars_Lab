@@ -1,5 +1,4 @@
 interface Racer {
-  Push(arg0: Racer): unknown;
   team: string;
   speed: number;
   accelerate(): void;
@@ -38,4 +37,3 @@ export { Racer }
 //     return null;
 //   };
 // };
-export { Racer };
