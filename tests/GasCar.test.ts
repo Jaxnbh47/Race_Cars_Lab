@@ -1,4 +1,4 @@
-import { GasCar } from "../src/GasCar";
+import { GasCar } from "../interfaces/GasCar";
 
 describe('GasCar', () => {
     test('sets team and fuel properties from constructor parameters', () => {
