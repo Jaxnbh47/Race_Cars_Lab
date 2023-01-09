@@ -2,16 +2,12 @@ import { Racer } from "./IRacer";
 
 class SolarCar implements Racer {
   team: string;
-  speed: number;
+  speed: number = 0;
 
   constructor(team: string) {
     this.team = team;
-    this.speed = 0;
+    this.speed;
   };
-  Push(arg0: Racer): unknown {
-        throw new Error("Method not implemented.");
-    }
-
 
   accelerate(): void {
     this.speed += 1;

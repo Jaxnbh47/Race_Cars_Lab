@@ -1,6 +1,4 @@
 import { Racer } from "../interfaces/IRacer";
-import { GasCar } from "../interfaces/GasCar";
-import { SolarCar } from "../interfaces/Solarcars";
 
 function findRacersWithEmptyFuel(racers: Racer[]){
   return racers.filter((racer) => racer.isFuelEmpty());

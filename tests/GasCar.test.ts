@@ -1,13 +1,13 @@
-import { Racer } from "../interface/IRacer";
+import { GasCar } from "../interfaces/GasCar";
 
 describe('GasCar', () => {
-    test('sets team and fuel properties from constructor parameters', () => {
+    test('sets team and fuel', () => {
       const Car = new GasCar('Team Jackson', 20);
       expect(Car.team).toBe('Team Jackson');
       expect(Car.fuel).toBe(20);
     });
     
-    test('fuel property defaults to 10 when second constructor parameter is omitted', () => {
+    test('fuel property defaults to 10', () => {
       const Car = new GasCar('Team Jackson');
       expect(Car.fuel).toBe(10);
     });
